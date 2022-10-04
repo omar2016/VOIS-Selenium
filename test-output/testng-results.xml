@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-04T04:40:07 EET" name="Vodafone" finished-at="2022-10-04T04:40:26 EET" duration-ms="19635">
+    <groups>
+    </groups>
+    <test started-at="2022-10-04T04:40:07 EET" name="VodafoneTest" finished-at="2022-10-04T04:40:26 EET" duration-ms="19635">
+      <class name="tests.GoogleSearchTests">
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.GoogleSearchTests@3d74bf60]" started-at="2022-10-04T04:40:07 EET" name="startDriver" finished-at="2022-10-04T04:40:10 EET" duration-ms="3192" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method signature="user_enter_data_to_googlesearchtext()[pri:1, instance:tests.GoogleSearchTests@3d74bf60]" started-at="2022-10-04T04:40:10 EET" name="user_enter_data_to_googlesearchtext" finished-at="2022-10-04T04:40:20 EET" duration-ms="10198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_enter_data_to_googlesearchtext -->
+        <test-method signature="nextPagecount()[pri:2, instance:tests.GoogleSearchTests@3d74bf60]" started-at="2022-10-04T04:40:20 EET" name="nextPagecount" finished-at="2022-10-04T04:40:25 EET" duration-ms="4567" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nextPagecount -->
+        <test-method is-config="true" signature="screenshotCapture(org.testng.ITestResult)[pri:0, instance:tests.GoogleSearchTests@3d74bf60]" started-at="2022-10-04T04:40:20 EET" name="screenshotCapture" finished-at="2022-10-04T04:40:20 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=user_enter_data_to_googlesearchtext status=SUCCESS method=GoogleSearchTests.user_enter_data_to_googlesearchtext()[pri:1, instance:tests.GoogleSearchTests@3d74bf60] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotCapture -->
+        <test-method signature="Validate_page_two_is_equal_page_three()[pri:3, instance:tests.GoogleSearchTests@3d74bf60]" started-at="2022-10-04T04:40:25 EET" name="Validate_page_two_is_equal_page_three" finished-at="2022-10-04T04:40:26 EET" duration-ms="839" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [10] but found [11]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [10] but found [11]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:643)
+at tests.GoogleSearchTests.Validate_page_two_is_equal_page_three(GoogleSearchTests.java:60)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_page_two_is_equal_page_three -->
+        <test-method is-config="true" signature="screenshotCapture(org.testng.ITestResult)[pri:0, instance:tests.GoogleSearchTests@3d74bf60]" started-at="2022-10-04T04:40:25 EET" name="screenshotCapture" finished-at="2022-10-04T04:40:25 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=nextPagecount status=SUCCESS method=GoogleSearchTests.nextPagecount()[pri:2, instance:tests.GoogleSearchTests@3d74bf60] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotCapture -->
+        <test-method is-config="true" signature="screenshotCapture(org.testng.ITestResult)[pri:0, instance:tests.GoogleSearchTests@3d74bf60]" started-at="2022-10-04T04:40:26 EET" name="screenshotCapture" finished-at="2022-10-04T04:40:26 EET" duration-ms="150" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Validate_page_two_is_equal_page_three status=FAILURE method=GoogleSearchTests.Validate_page_two_is_equal_page_three()[pri:3, instance:tests.GoogleSearchTests@3d74bf60] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotCapture -->
+        <test-method is-config="true" signature="stopDriver()[pri:0, instance:tests.GoogleSearchTests@3d74bf60]" started-at="2022-10-04T04:40:26 EET" name="stopDriver" finished-at="2022-10-04T04:40:26 EET" duration-ms="505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopDriver -->
+      </class> <!-- tests.GoogleSearchTests -->
+    </test> <!-- VodafoneTest -->
+  </suite> <!-- Vodafone -->
+</testng-results>

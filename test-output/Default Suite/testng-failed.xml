@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="VodafoneautomationTask-master(failed)">
+    <classes>
+      <class name="tests.GoogleSearchTests">
+        <methods>
+          <include name="startDriver"/>
+          <include name="stopDriver"/>
+          <include name="nextPagecount"/>
+        </methods>
+      </class> <!-- tests.GoogleSearchTests -->
+    </classes>
+  </test> <!-- VodafoneautomationTask-master(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

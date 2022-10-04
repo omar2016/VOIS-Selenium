@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Vodafone">
+    <listeners>
+        <listener class-name="tests.ITestlistenerClass"/>
+    </listeners>
+    <test name="VodafoneTest">
+        <classes>
+            <class name="tests.GoogleSearchTests">
+                <methods>
+                    <include name="user_enter_data_to_googlesearchtext"/>
+                </methods>
+            </class>
+            <class name="tests.GoogleSearchTests">
+                <methods>
+                    <include name="nextPagecount"/>
+                </methods>
+            </class>
+
+            <class name="tests.GoogleSearchTests">
+                <methods>
+                    <include name="Validate_page_two_is_equal_page_three"/>
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
